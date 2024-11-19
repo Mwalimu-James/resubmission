@@ -3,16 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "postcss": "^8.4.49",
+    "postcss-safe-parser": "^7.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "semantic-ui-css": "^2.2.10"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "json-server": "^0.15.1"
   },
   "scripts": {
-    "start": "PORT=8000 react-scripts start",
+    "start": "cross-env PORT=8000 react-scripts start",
     "server": "json-server --watch db.json -p 8001"
   },
   "eslintConfig": {
