@@ -90,6 +90,13 @@
       "category": "Action",
       "amount": "3",
       "id": 13
+    },
+    {
+      "date": "2024-11-06",
+      "description": "rice",
+      "category": "food",
+      "amount": "1",
+      "id": 14
     }
   ]
 }

@@ -8,17 +8,17 @@ function AccountContainer() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:8001/transactions")
+    fetch("http://localhost:3000/transactions")
       .then((response) => response.json())
       .then((data) => setTransactions(data));
   }, []);
 
-  // Add new transaction
+  
   const handleAddTransaction = (newTransaction) => {
     setTransactions([...transactions, newTransaction]);
   };
 
-  // Filter transactions based on search term
+  
   const filteredTransactions = transactions.filter((transaction) =>
     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
